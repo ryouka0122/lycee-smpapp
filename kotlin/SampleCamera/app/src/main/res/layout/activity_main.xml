@@ -7,13 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <org.opencv.android.JavaCamera2View
+        android:id="@+id/javaCamera2View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:camera_id="back"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="271dp" />
+
     <TextView
+        android:id="@+id/filter_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -87,3 +87,5 @@ kotlin/SampleCamera/.idea/
 kotlin/SampleFragment/.idea/
 kotlin/SampleCamera/opencv/
 kotlin/SampleCamera/app/src/main/jniLibs/
+kotlin/SampleCustomView/.idea/
+kotlin/WireSample/.idea/

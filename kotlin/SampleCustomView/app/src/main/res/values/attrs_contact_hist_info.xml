@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="ContactHistInfo">
+        <attr name="contactDate" format="string" />
+        <attr name="contactUser" format="string" />
+    </declare-styleable>
+</resources>

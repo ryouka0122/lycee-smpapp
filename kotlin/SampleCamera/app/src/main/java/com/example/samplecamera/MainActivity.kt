@@ -3,15 +3,18 @@ package com.example.samplecamera
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.samplecamera.filters.ImageFilter
+import com.example.samplecamera.filters.ImageFilterManager
 import kotlinx.android.synthetic.main.activity_main.*
 import org.opencv.android.*
 import org.opencv.core.Mat
 
 class MainActivity : CameraActivity(),
-        CameraBridgeViewBase.CvCameraViewListener2
+        CameraBridgeViewBase.CvCameraViewListener2,
+        View.OnClickListener
 {
 
-    val TAG : String = "SampleCamera.MainActivity"
+    val TAG : String = "SampleCamera"
 
     init {
         System.loadLibrary("opencv_java4")
@@ -24,6 +27,7 @@ class MainActivity : CameraActivity(),
         javaCamera2View.visibility = View.VISIBLE
 
         javaCamera2View.setCvCameraViewListener(this)
+        javaCamera2View.setOnClickListener(this)
     }
 
     override fun getCameraViewList(): MutableList<out CameraBridgeViewBase> {
@@ -73,11 +77,17 @@ class MainActivity : CameraActivity(),
 
     }
 
-    override fun onCameraFrame(inputFrame: CameraBridgeViewBase.CvCameraViewFrame?): Mat {
-        // convey grayscale image data to view
-        return inputFrame!!.gray()
+    private val filterManager = ImageFilterManager()
+
+    override fun onClick(v: View?) {
+        filterManager.next()
+        val name = filterManager.currentName()
+        Log.d(TAG, "current filter name : $name")
+        filter_text.text = name
     }
 
-
+    override fun onCameraFrame(inputFrame: CameraBridgeViewBase.CvCameraViewFrame?): Mat {
+        return filterManager.process(inputFrame!!.rgba())
+    }
 
 }

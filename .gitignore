@@ -83,3 +83,7 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+kotlin/SampleCamera/.idea/
+kotlin/SampleFragment/.idea/
+kotlin/SampleCamera/opencv/
+kotlin/SampleCamera/app/src/main/jniLibs/

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="会社名"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="部署・所属"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="氏名"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="メールアドレス"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="会社電話番号"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="携帯番号"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cellTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAX"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyFax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="住所"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="会社名"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/companyUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="交換日"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/regDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="メモ"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:editable="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ラベル"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.sampleintent
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,11 +53,17 @@ class MainActivity : AppCompatActivity() {
 
     private inner class ListItemClickListener : AdapterView.OnItemClickListener {
         override fun onItemClick(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-            val dialog = OrderConfirmDialogFragment()
-            dialog.show(supportFragmentManager, "OrderConfirmDialogFragment")
+            val item = parent.getItemAtPosition(position) as MutableMap<String, String>
+
+            val name = item["name"]
+            val price = item["price"]
+
+            val intent = Intent(applicationContext, MenuThanksActivity::class.java)
+
+            intent.putExtra("menuName", name)
+            intent.putExtra("menuPrice", price)
+            startActivity(intent)
         }
-
     }
-
 
 }

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">画面部品サンプル</string>
+
+
+    <string name="label_tv">Text View</string>
+    <string name="tv_msg">お名前を入力してください．</string>
+
+    <string name="label_btn">Button</string>
+    <string name="btn_msg">おしてみて！</string>
+
+    <string name="label_ll_cb">LinearLayout &amp; CheckBox</string>
+    <string name="cb_drink">ドリンク</string>
+    <string name="cb_food">フード</string>
+
+    <string name="label_rg_rb">RadioGroup &amp; RadioButton</string>
+    <string name="text_sex_male">男</string>
+    <string name="text_sex_female">女</string>
+
+    <string name="label_spinner">Spinner</string>
+    <string-array name="sp_curry_list">
+        <item>ドライカレー</item>
+        <item>カツカレー</item>
+        <item>ビーフカレー</item>
+        <item>チキンカレー</item>
+        <item>シーフードカレー</item>
+        <item>キーマカレー</item>
+        <item>グリーンカレー</item>
+    </string-array>
+
+    <string name="label_lv">ListView</string>
+    <string-array name="lv_cocktail_list">
+        <item>ホワイトレディー</item>
+        <item>バラライカ</item>
+        <item>XYZ</item>
+        <item>ニューヨーク</item>
+        <item>マンハッタン</item>
+        <item>ミシシッピミュール</item>
+        <item>ブルーハワイ</item>
+    </string-array>
+
+    <string name="label_submit">決定</string>
+</resources>

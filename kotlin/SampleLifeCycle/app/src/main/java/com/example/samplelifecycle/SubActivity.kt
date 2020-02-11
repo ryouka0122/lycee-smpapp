@@ -6,48 +6,47 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class SubActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.i("SampleLifeCycle", "Main onCreate() called.")
+        Log.i("SampleLifeCycle", "onCreate() called.")
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sub)
     }
 
     override fun onStart() {
-        Log.i("SampleLifeCycle", "Main onStart() called.")
+        Log.i("SampleLifeCycle", "Sub onStart() called.")
         super.onStart()
     }
 
     override fun onRestart() {
-        Log.i("SampleLifeCycle", "Main onRestart() called.")
+        Log.i("SampleLifeCycle", "Sub onRestart() called.")
         super.onRestart()
     }
 
     override fun onResume() {
-        Log.i("SampleLifeCycle", "Main onResume() called.")
+        Log.i("SampleLifeCycle", "Sub onResume() called.")
         super.onResume()
     }
 
     override fun onPause() {
-        Log.i("SampleLifeCycle", "Main onPause() called.")
+        Log.i("SampleLifeCycle", "Sub onPause() called.")
         super.onPause()
     }
 
     override fun onStop() {
-        Log.i("SampleLifeCycle", "Main onStop() called.")
+        Log.i("SampleLifeCycle", "Sub onStop() called.")
         super.onStop()
     }
 
     override fun onDestroy() {
-        Log.i("SampleLifeCycle", "Main onDestroy() called.")
+        Log.i("SampleLifeCycle", "Sub onDestroy() called.")
         super.onDestroy()
     }
 
     fun onButtonClick(view: View) {
-        Log.i("SampleLifeCycle", "Main onButtonClick() called.")
-        val intent = Intent(applicationContext, SubActivity::class.java)
-        startActivity(intent)
+        Log.i("SampleLifeCycle", "Sub onButtonClick() called.")
+        finish()
     }
 
 }

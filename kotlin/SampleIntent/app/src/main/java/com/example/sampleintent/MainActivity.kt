@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        lvMenu.onItemClickListener = ListItemClickListnener()
+        lvMenu.onItemClickListener = ListItemClickListener()
     }
 
-    private inner class ListItemClickListnener : AdapterView.OnItemClickListener {
+    private inner class ListItemClickListener : AdapterView.OnItemClickListener {
         override fun onItemClick(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
             val item = parent.getItemAtPosition(position) as String
 
